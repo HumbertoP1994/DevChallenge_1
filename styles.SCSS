@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html {
+    font-size: 24px;
+    font-family: 'Inconsolata', monospace;
+}
+.hero{
+    display:flex;
+    flex-direction: column;
+    height:600px;
+}
+.image img{
+    width:100%;
+    height:100%;
+}
+.error{
+    color:black;
+    text-transform: uppercase;
+    font-weight:700;
+    letter-spacing: -0.05rem;
+}
+.hero h1{
+    font-size:48px;
+    line-height:50px;
+    font-family: "Roboto condensed";
+}
+.hero p{
+    font-weight:400;
+    letter-spacing: -0.05rem;
+}
+.hero button{
+    height:80px;
+    width:200px;
+    background-color:rgba(0, 0, 0, 0.8);
+    color:white;
+    font-weight:700;
+    text-transform: uppercase;
+    word-spacing: 0.1rem;
+}
+footer{
+    position: absolute;
+    bottom:0;
+    font-size:15px;
+    p{
+        color:#4f4f4f;
+        font-weight:400;
+    }
+    a{
+        color:red;
+        text-decoration: none;
+        font-weight:700;
+    }
+}
+@media only screen and (min-width:1440px) {
+    .hero{
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        flex-direction: row;
+        width:50%;
+    }
+    .text{
+        display:flex;
+        flex-direction: column;
+        margin-top:auto;
+        margin-bottom:auto;
+    }
+    .text h1{
+        font-size:3rem;
+        letter-spacing:-0.04rem;
+        line-height:80px;
+    }
+    .text p{
+        letter-spacing:-0.04rem;
+        color:#4f4f4f;
+        font-weight:400;
+    }
+    .image{
+        margin-right:20px;
+    }
+    footer{
+        position:absolute;
+        top:1000px;
+        left:1150px;
+        margin:auto;
+        padding-top:20px;;
+    }
+    footer p{
+        color: #4f4f4f;
+        font-weight:400;
+    }
+    footer a{
+        text-decoration: none;
+        color:red;
+        font-weight:700;
+    }
+}
